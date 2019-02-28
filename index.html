@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/watermark.js"></script>
+
+		<script>
+			var wm = new watermark({
+				text: "水印测试",  //水印内容
+				fontSize: "24",  //水印字体大小
+				color: "#FCF",  //水印字体颜色
+				opacity: 0.3,  //水印透明度
+				rotate: 20,  //水印旋转角度
+				spaceX:10,  //水印水平间隔
+				spaceY:10,  //水印垂直间隔
+			});
+		</script>
+	</body>
+
+</html>
