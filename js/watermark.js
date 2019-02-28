@@ -11,9 +11,9 @@
 	var setting = {
 		text: "水印测试", //水印内容，将来支持数组和图片
 		fontSize: "24", //字体大小
-		color: "#FCF",  //文字颜色
-		opacity: 0.3,  //水印透明度
-		rotate: 20,  //水印旋转角度
+		color: "#000", //水印字体颜色
+		opacity: 0.1, //水印透明度
+		rotate: 20, //水印旋转角度
 		spaceX: 10, //间隔
 		spaceY: 10, //间隔
 	};

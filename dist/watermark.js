@@ -1,6 +1,7 @@
 (function(window) {
 	/**
 	 * js水印插件
+	 * 自动在body底部生成一个水印
 	 * auth：zhangdaren
 	 * date：20190218
 	 * version: v1.0
@@ -8,13 +9,13 @@
 	 * */
 	var canvas = null;
 	var setting = {
-		text: "水印测试", //将来支持数组
-		fontSize: "14",
-		color: "#FCF",
-		opacity: 0.3,
-		rotate: 30,
-		spaceX: 50, //间隔
-		spaceY: 50, //间隔
+		text: "水印测试", //水印内容，将来支持数组和图片
+		fontSize: "24", //字体大小
+		color: "#000", //水印字体颜色
+		opacity: 0.1, //水印透明度
+		rotate: 20, //水印旋转角度
+		spaceX: 10, //间隔
+		spaceY: 10, //间隔
 	};
 	var ww; //屏幕宽度
 	var wh; //屏幕高度
@@ -41,7 +42,7 @@
 			wh = document.body.clientHeight;
 			//
 			canvas = document.createElement("canvas");
-			canvas.style = "position:absolute; z-index:0; width:100%;height:100%;";
+			canvas.style = "position:absolute; z-index:0; width:100%;height:100%;left:0;top:0";
 			canvas.setAttribute("width", ww);
 			canvas.setAttribute("height", wh);
 			document.body.append(canvas);
